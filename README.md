@@ -48,12 +48,12 @@ Users can perform the following operations:
   - Source & Destination
   - Date of Journey (DOJ)
   - Coach Class
-- Generates a **unique 10-digit PNR**
 - Performs strict validations:
   - Route validity
   - Running day verification
   - Seat availability check
 - Updates seat count immediately after booking
+- Generates a **unique 10-digit PNR**
 
 ---
 
@@ -189,3 +189,105 @@ The Admin module supports the following operations:
 
 
 > ⚠️ All administrative operations are protected by multi-level validations and confirmation prompts to prevent accidental or unauthorized data modification.
+
+---
+
+## 📸 Application Screenshots (Execution Flow)
+
+## Main Page
+
+![Main Page](MainPage.png)
+
+
+## 👨‍💼 Admin Module
+
+### 🔐 Admin Login & Dashboard
+![Admin Login & Dashboard](AdminLogin&Dashboard.png)
+
+
+### ➕ Add Train
+
+**Step 1: Train Basic Details**
+![Add Train Image 1](AddTrain1.png)
+
+**Step 2: Route Configuration and Confirmation**
+![Add Train Image 2](AddTrain2.png)
+
+
+### 🔄 Update Train
+
+![Update Train Image 1](UpdateTrain1.png)
+
+![Update Train Image 2](UpdateTrain1.png)
+
+
+### ❌ Delete Train
+![Delete Train](DeleteTrain.png)
+
+
+### 📊 Total Earnings
+![Total Earnings](screenshots/admin/07_TotalEarnings.png)
+
+
+---
+
+## 👤 User Module
+
+### 🔐 User Login & Dashboard
+![User Login & Dashboard](UserLogin&Dashboard.png)
+
+
+### 🎫 Book Ticket
+![Book Ticket Image 1](BookTicket1.png)
+
+![Book Ticket Image 2](BookTicket2.png)
+
+![Book Ticket Image 3](BookTicket3.png)
+
+
+### ❌ Cancel Ticket
+![Cancel Ticket](TicketCancel.png)
+
+
+### 🖨️ Print Ticket
+![Print Ticket](PrintTicket.png)
+
+
+### 🚆 View Train Information
+![View Train Information](UserTrainInfo.png)
+
+
+### 💺 Check Seat Availability
+![Check Seat Availability](CheckSeatAvailability.png)
+
+
+### 🔎 Find Train
+
+![Find Train Image 1](FindTrain1.png)
+
+![Find Train Image 2](FindTrain2.png)
+
+
+---
+
+## ✨ Key Features
+
+- ✔️ Exact & Partial Route Matching
+- ✔️ Class-wise Fare Calculation
+- ✔️ Seat Reset Warnings (IRCTC-style)
+- ✔️ Input Validation (Date, Station, Train No)
+- ✔️ Data Integrity Protection
+- ✔️ Modular Code Architecture
+
+---
+
+## 📂 File-Based Storage
+
+All data is stored persistently using text files:
+
+- `trains.txt` - Train details
+- `UsersCredentials.txt` - User accounts
+- `BookedTickets.txt` - Ticket records
+- `CancelledTickets.txt` - Cancelled Ticket records
+
+---
