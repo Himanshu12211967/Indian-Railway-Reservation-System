@@ -199,34 +199,57 @@ The Admin module supports the following operations:
 ![Main Page](MainPage.png)
 
 
+
 ## 👨‍💼 Admin Module
 
 ### 🔐 Admin Login & Dashboard
+
 ![Admin Login & Dashboard](AdminLogin&Dashboard.png)
+
 
 
 ### ➕ Add Train
 
-**Step 1: Train Basic Details**
 ![Add Train Image 1](AddTrain1.png)
 
-**Step 2: Route Configuration and Confirmation**
 ![Add Train Image 2](AddTrain2.png)
+
 
 
 ### 🔄 Update Train
 
 ![Update Train Image 1](UpdateTrain1.png)
 
-![Update Train Image 2](UpdateTrain1.png)
+![Update Train Image 2](UpdateTrain2.png)
+
 
 
 ### ❌ Delete Train
+
 ![Delete Train](DeleteTrain.png)
 
 
+
+### 📄 View All Trains
+
+![View All Trains](ViewAllTrain.png)
+
+
+
+### 🔍 View Train Details
+
+![View Train Details Image 1](AdminTrainDetails1.png)
+
+![View Train Details Image 2](AdminTrainDetails2.png)
+
+
+
 ### 📊 Total Earnings
-![Total Earnings](screenshots/admin/07_TotalEarnings.png)
+
+![Total Earnings Image 1](TotalEarnings1.png)
+
+![Total Earnings Image 2](TotalEarnings2.png)
+
 
 
 ---
@@ -234,10 +257,13 @@ The Admin module supports the following operations:
 ## 👤 User Module
 
 ### 🔐 User Login & Dashboard
+
 ![User Login & Dashboard](UserLogin&Dashboard.png)
 
 
+
 ### 🎫 Book Ticket
+
 ![Book Ticket Image 1](BookTicket1.png)
 
 ![Book Ticket Image 2](BookTicket2.png)
@@ -245,20 +271,29 @@ The Admin module supports the following operations:
 ![Book Ticket Image 3](BookTicket3.png)
 
 
+
 ### ❌ Cancel Ticket
+
 ![Cancel Ticket](TicketCancel.png)
 
 
+
 ### 🖨️ Print Ticket
+
 ![Print Ticket](PrintTicket.png)
 
 
+
 ### 🚆 View Train Information
+
 ![View Train Information](UserTrainInfo.png)
 
 
+
 ### 💺 Check Seat Availability
+
 ![Check Seat Availability](CheckSeatAvailability.png)
+
 
 
 ### 🔎 Find Train
@@ -266,6 +301,7 @@ The Admin module supports the following operations:
 ![Find Train Image 1](FindTrain1.png)
 
 ![Find Train Image 2](FindTrain2.png)
+
 
 
 ---
@@ -291,3 +327,45 @@ All data is stored persistently using text files:
 - `CancelledTickets.txt` - Cancelled Ticket records
 
 ---
+
+## 🔑 Sample Login Credentials
+
+### Admin
+- Username: `admin`
+- Password: `admin123`
+
+### User
+- Username: `user1`
+- Password: `user123`
+
+---
+
+## ⚠️ Edge Cases & Validations Handled
+
+- Booking on non-running days
+- Invalid source–destination routes
+- Past date journey prevention
+- Seat exhaustion handling
+- Duplicate PNR prevention
+- Cancellation of already cancelled tickets
+- Train update restriction when bookings exist
+- Safe deletion checks for trains
+
+---
+
+## 🚧 Current Limitations
+
+- Console-based UI (no GUI)
+- Single-user access (no concurrency)
+- File-based storage instead of database
+- No real-time payment integration
+
+---
+
+## 🎯 Learning Outcomes
+
+- Applied real-world IRCTC workflows in C++
+- Strong understanding of OOP & STL
+- File-based data persistence & consistency
+- Validation-driven system design
+- Modular & scalable architecture thinking
