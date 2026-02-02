@@ -332,18 +332,18 @@ All data is stored persistently using text files:
 
 ### Admin
 - Username: `admin`
-- Password: `admin123`
+- Password: `admin@123`
 
 ### User
-- Username: `user1`
-- Password: `user123`
+- Username: `MSDHONI`
+- Password: `#MSdhoni07`
 
 ---
 
 ## ⚠️ Edge Cases & Validations Handled
 
 - Booking on non-running days
-- Invalid source–destination routes
+- Invalid source-destination routes
 - Past date journey prevention
 - Seat exhaustion handling
 - Duplicate PNR prevention
